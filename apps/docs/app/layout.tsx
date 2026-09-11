@@ -12,29 +12,36 @@ import { cn } from "@/lib/utils";
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://shadcn-animated.vercel.app"),
+
   title: {
     default: "shadcn animated",
     template: "%s | shadcn animated",
   },
+
   description:
     "A growing collection of handcrafted animated shadcn/ui components.",
+
   icons: {
     icon: "/favicon.svg",
   },
+
   openGraph: {
     title: "shadcn animated",
     description:
       "A growing collection of handcrafted animated shadcn/ui components.",
+    type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "shadcn-animated",
+        alt: "shadcn animated",
       },
     ],
   },
-    twitter: {
+
+  twitter: {
     card: "summary_large_image",
     title: "shadcn animated",
     description:
@@ -52,12 +59,10 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col">
           <Header />
           <div className="flex-1">{children}</div>
-         
           <Footer />
         </main>
-         <Analytics />
+        <Analytics />
       </body>
-
     </html>
   );
 }
