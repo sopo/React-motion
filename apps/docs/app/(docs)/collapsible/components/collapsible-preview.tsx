@@ -12,7 +12,7 @@ const CollapsiblePreview = () => {
       <Collapsible className="max-w-md w-xs p-4 rounded-2xl  h-auto">
         <CollapsibleTrigger
           render={
-            <Button variant="ghost" className="w-full">
+            <Button variant="ghost" className="w-full text-lg">
               Product details
               <ChevronDownIcon className="ml-auto group-data-panel-open/button:rotate-180" />
             </Button>
