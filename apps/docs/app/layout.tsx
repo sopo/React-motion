@@ -30,9 +30,16 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Your Site",
+        alt: "shadcn-animated",
       },
     ],
+  },
+    twitter: {
+    card: "summary_large_image",
+    title: "shadcn animated",
+    description:
+      "A growing collection of handcrafted animated shadcn/ui components.",
+    images: ["/og-image.png"],
   },
 };
 
