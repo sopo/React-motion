@@ -12,12 +12,13 @@ const CollapsiblePreview = () => {
       <Collapsible className="max-w-md w-xs p-4 rounded-2xl  h-auto">
         <CollapsibleTrigger
           render={
-            <Button variant="ghost" className="w-full text-lg">
+            <Button variant="ghost" className="w-full">
               Product details
               <ChevronDownIcon className="ml-auto group-data-panel-open/button:rotate-180" />
             </Button>
           }
         />
+
         <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 text-sm">
           <div className="text-[16px] text-secondary-foreground">
             This panel can be expanded or collapsed to reveal additional
