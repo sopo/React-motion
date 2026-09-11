@@ -31,6 +31,17 @@ export const registry = {
     registryDependencies: [],
     source: "checkbox.tsx",
   },
+    collapsible: {
+    dependencies: [
+      "@base-ui/react",
+      "clsx",
+      "lucide-react",
+      "tailwind-merge",
+      "motion",
+    ],
+    registryDependencies: [],
+    source: "collapsible.tsx",
+  },
   "radio-group": {
     dependencies: [
       "@base-ui/react",
