@@ -40,4 +40,5 @@ export {
 } from "./components/accordion";
 export {
   Switch
-} from "./components/switch"
+} from "./components/switch";
+export { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./components/collapsible"
