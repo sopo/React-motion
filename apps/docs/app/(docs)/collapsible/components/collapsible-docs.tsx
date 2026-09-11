@@ -6,7 +6,6 @@ import Code from "../../../../components/code-block";
 import NextSection from "../../../../components/next-section";
 import CollapsiblePreview from "./collapsible-preview";
 
-
 const CollapsibleDocs = () => {
   return (
     <div className="flex flex-col gap-12">
@@ -52,17 +51,27 @@ const CollapsibleDocs = () => {
       <div className="flex flex-col gap-4">
         <h2 className="text-xl">Usage</h2>
         <div className="flex flex-col gap-4">
-          <Code code={`import { Collapsible } from "@/components/ui/collapsible"`} />
-          <Code code={`<div className="mx-auto w-xs h-50">
+          <Code
+            code={`import {
+  Button,
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "shadcn-animated";
+import { ChevronDownIcon } from "lucide-react";`}
+          />
+          <Code
+            code={`  <div className="mx-auto w-xs h-50">
       <Collapsible className="max-w-md w-xs p-4 rounded-2xl  h-auto">
         <CollapsibleTrigger
           render={
-            <Button variant="ghost" className="w-full text-lg">
+            <Button variant="ghost" className="w-full">
               Product details
               <ChevronDownIcon className="ml-auto group-data-panel-open/button:rotate-180" />
             </Button>
           }
         />
+
         <CollapsibleContent className="flex flex-col items-start gap-2 p-2.5 text-sm">
           <div className="text-[16px] text-secondary-foreground">
             This panel can be expanded or collapsed to reveal additional
@@ -71,7 +80,8 @@ const CollapsibleDocs = () => {
           <Button size="lg">Learn More</Button>
         </CollapsibleContent>
       </Collapsible>
-    </div>`} />
+    </div>`}
+          />
         </div>
       </div>
 
